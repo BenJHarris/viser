@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as RouterLink } from "react-router-dom";
 
 export const Nav = styled.div`
-  border-bottom: 1px solid #282828;
+  font-weight: bold;
 `;
 
 export const NavHeader = styled.div`
@@ -23,7 +23,7 @@ export const NavButton = styled.div`
   transition: 0.2s;
   &:hover,
   &:focus {
-    background-color: #ff6b6b;
+    background-color: #1b1c26;
   }
 `;
 

@@ -35,7 +35,9 @@ export default createGlobalStyle`
     height: 100%;
     overscroll-behavior-y: none;
     -webkit-overflow-scrolling: touch;
-    background-color: #171717;
+    background-color: #0B0C11;
+
+
   }
   #root {
     height: 100%;

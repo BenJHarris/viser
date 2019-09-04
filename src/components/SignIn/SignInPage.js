@@ -4,6 +4,7 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import { auth } from "firebaseui";
 import { useFirebaseApp, useUser } from "reactfire";
 import { HOME } from "../../constants/routes";
+import { SignInContainer } from "./style";
 
 const SignInPage = ({ history }) => {
   const user = useUser();
@@ -24,10 +25,10 @@ const SignInPage = ({ history }) => {
   };
 
   return (
-    <div>
-      <h1>SignIn</h1>
+    <SignInContainer>
+      <h1>Sign In</h1>
       <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
-    </div>
+    </SignInContainer>
   );
 };
 

@@ -1,7 +1,19 @@
 import React from "react";
+import { NotFound, HelperSection } from "./style";
+import { HOME } from "../../constants/routes";
+import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
-  return <p>404 - you came to the wrong neighborhood</p>;
+  return (
+    <>
+      <NotFound src="/404.svg" />
+      <HelperSection>
+        <p>
+          Lost? return <Link to={HOME}>Home</Link>
+        </p>
+      </HelperSection>
+    </>
+  );
 };
 
 export default NotFoundPage;
